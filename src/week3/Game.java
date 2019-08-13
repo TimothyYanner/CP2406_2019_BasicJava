@@ -1,12 +1,27 @@
 package week3;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
     private Random random = new Random();
     int secret = random.nextInt(10) + 1;
     int count;
     int wins;
+
+    public static void main(String[] args) {
+        Game game = new Game();
+        Scanner inputDevice = new Scanner(System.in);
+        System.out.print("Guess the number >>> ");
+        int numberGuess = inputDevice.nextInt();
+        game.makeGuess(numberGuess);
+        if (game.wins == 1) {
+            System.out.println("You Won!");
+        }
+        else {
+            System.out.println("You Lost");
+        }
+    }
 
     void makeGuess(int value) {
         if (value <= 10 && value > 0) {
