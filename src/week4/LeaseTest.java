@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LeaseTest {
-    @Test void basicTest() {
+    @Test
+    void basicTest() {
         Lease lease = new Lease();
 
         // Call all setter methods to assign new values to lease attributes
@@ -27,7 +28,8 @@ class LeaseTest {
         assertEquals(8, termOfLease);
     }
 
-    @Test void checkAddPetFee() {
+    @Test
+    void checkAddPetFee() {
         Lease lease = new Lease();
         lease.addPetFee();
 
