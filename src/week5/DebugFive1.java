@@ -7,7 +7,7 @@ package week5;// DebugFive1
 import javax.swing.*;
 
 public class DebugFive1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String args[]) throws Exception {
         final double HIGH_PRICE = 2.59;
         final double MED_PRICE = 1.99;
         final double LOW_PRICE = 0.89;
