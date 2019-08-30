@@ -1,12 +1,12 @@
 package week5;// DebugSix4.java
-// Displays 5 random numbers between 
+// Displays 5 random numbers between
 // (and including) user-specified values
 import java.util.Scanner;
 public class DebugSix4
 {
    public static void main(String[] args)
    {
-      int high, low, count = 0;
+      int high, low, count;
       final int NUM = 5;
       Scanner input = new Scanner(System.in);
       // Prompt user to enter high and low values
@@ -25,6 +25,8 @@ public class DebugSix4
          high = input.nextInt();
       }
 
+      count = low - 5;
+
       while(count < low)
       {
          double result = Math.random();
@@ -32,7 +34,7 @@ public class DebugSix4
          int answer = (int) (result * 10 + low);
           // multiply by 10 and add low -- random is at least the value of low
           // only use answer if it is low enough
-         if(answer <= low)
+         if(answer <= high)
          {
             System.out.print(answer + "  ");
             ++count;
@@ -41,3 +43,4 @@ public class DebugSix4
       System.out.println();
    }
 }
+

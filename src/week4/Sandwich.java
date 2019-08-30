@@ -6,7 +6,6 @@ public class Sandwich {
     double price;
 
     public String getMainIngredient() {
-        mainIngredient = "tuna";
         return mainIngredient;
     }
 
@@ -15,7 +14,6 @@ public class Sandwich {
     }
 
     public String getBreadType() {
-        breadType = "wheat";
         return breadType;
     }
 
@@ -24,7 +22,6 @@ public class Sandwich {
     }
 
     public double getPrice() {
-        price = 5.99;
         return price;
     }
 

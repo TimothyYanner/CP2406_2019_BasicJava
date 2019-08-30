@@ -6,6 +6,13 @@ public class Lease {
     private double monthlyRent;
     private int termOfLease;
 
+    public Lease(String tenantName, int apartmentNumber, double monthlyRent, int termOfLease) {
+        this.tenantName = tenantName;
+        this.apartmentNumber = apartmentNumber;
+        this.monthlyRent = monthlyRent;
+        this.termOfLease = termOfLease;
+    }
+
     Lease() {
         tenantName = "Fred";
         apartmentNumber = 4;

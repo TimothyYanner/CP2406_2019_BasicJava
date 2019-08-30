@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class SandwichTest {
     @Test void checkGetMainIngredient() {
         Sandwich sandwich = new Sandwich();
-        String mainIngredient = sandwich.getMainIngredient();
-        assertEquals("tuna", mainIngredient);
+        sandwich.setMainIngredient("tuna");
+        assertEquals("tuna", sandwich.getMainIngredient());
     }
     @Test void checkSetMainIngredient() {
         Sandwich sandwich = new Sandwich();
@@ -18,8 +18,8 @@ class SandwichTest {
     }
     @Test void checkGetBreadType() {
         Sandwich sandwich = new Sandwich();
-        String breadType = sandwich.getBreadType();
-        assertEquals("wheat", breadType);
+        sandwich.setBreadType("wheat");
+        assertEquals("wheat", sandwich.getBreadType());
     }
     @Test void checkSetBreadType() {
         Sandwich sandwich = new Sandwich();
@@ -28,8 +28,8 @@ class SandwichTest {
     }
     @Test void checkGetPrice() {
         Sandwich sandwich = new Sandwich();
-        double price = sandwich.getPrice();
-        assertEquals(5.99, price);
+        sandwich.setPrice(5.99);
+        assertEquals(5.99, sandwich.getPrice());
     }
     @Test void checkSetPrice() {
         Sandwich sandwich = new Sandwich();
