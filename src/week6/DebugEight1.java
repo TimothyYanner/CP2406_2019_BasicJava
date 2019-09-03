@@ -5,7 +5,7 @@ package week6;// Application prompts user showing valid shipping codes
 import javax.swing.*;
 
 public class DebugEight1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         char userCode;
         String entry, message;
         boolean found = false;
