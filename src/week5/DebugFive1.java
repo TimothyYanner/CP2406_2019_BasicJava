@@ -8,8 +8,9 @@ import javax.swing.*;
 
 public class DebugFive1 {
     public static void main(String[] args) {
-        final double MED_PRICE = 1.99;
-        final double LOW_PRICE = 0.89;
+        final double MED_PRICE = 2.59;
+        final double LOW_PRICE = 1.99;
+        final double ADD_PRICE = 0.89;
         String usersChoiceString;
         int usersChoice;
         double bill = 0.0;
@@ -26,7 +27,7 @@ public class DebugFive1 {
                 "Fries with that?\n1 - Yes\n2 - No");
         usersChoice = Integer.parseInt(usersChoiceString);
         if (usersChoice == 1) {
-            bill = bill + LOW_PRICE;
+            bill = bill + ADD_PRICE;
         }
         JOptionPane.showMessageDialog(null, "Bill is " + bill);
     }

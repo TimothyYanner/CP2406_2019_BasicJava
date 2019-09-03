@@ -11,9 +11,9 @@ public class DebugFive3 {
     public static void main(String[] args) {
         int item;
         String output;
-        final int LOW = 500;
-        final int HIGH = 999;
-        final int CUTOFF = 11111;
+        final int LOW = 111;
+        final int HIGH = 500;
+        final int CUTOFF = 999;
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter item number");
         item = input.nextInt();
@@ -21,7 +21,7 @@ public class DebugFive3 {
             output = "Item number too low";
         } else {
             if (item >= CUTOFF){
-                output = "Item number too low";
+                output = "Item number too high";
             }
         else{
                 if (item <= HIGH){
