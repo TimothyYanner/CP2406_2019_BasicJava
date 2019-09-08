@@ -10,7 +10,7 @@ public class DemoCandles {
         ScentedCandle candle2 = new ScentedCandle();
         candle2.setColour("Pink");
         candle2.setHeightInches(4);
-        System.out.println("The first candle is " + candle2.getColour() + ", standing at " + candle2.getHeightInches()
+        System.out.println("The second candle is " + candle2.getColour() + ", standing at " + candle2.getHeightInches()
                 + " inches tall with a price of $" + candle2.getPrice());
     }
 }
