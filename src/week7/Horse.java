@@ -29,9 +29,4 @@ public class Horse {
         this.birthYear = birthYear;
     }
 
-    Horse(String name, String colour, int birthYear) {
-        this.name = name;
-        this.colour = colour;
-        this.birthYear = birthYear;
-    }
 }

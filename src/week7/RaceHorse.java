@@ -10,9 +10,4 @@ public class RaceHorse extends Horse {
     public void setNumberRaces(int numberRaces) {
         this.numberRaces = numberRaces;
     }
-
-    RaceHorse(String name, String colour, int birthYear, int numberRaces) {
-        super(name, colour, birthYear);
-        this.numberRaces = numberRaces;
-    }
 }
