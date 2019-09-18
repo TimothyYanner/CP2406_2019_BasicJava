@@ -1,8 +1,8 @@
 package week8;
 
 public abstract class Book {
-    String title;
-    double price;
+    protected String title;
+    protected double price;
 
     Book(String title) {
         this.title = title;
