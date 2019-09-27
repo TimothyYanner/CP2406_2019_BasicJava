@@ -17,11 +17,15 @@ public class JCaptials extends JFrame implements ActionListener {
     JCaptials() {
         super("JCapitals");
         setVisible(true);
-        setLayout(new FlowLayout());
+        setLayout(new GridBagLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600, 600);
-        add(countries);
-        add(capital);
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        add(countries, gridBagConstraints);
+        gridBagConstraints.gridy = 1;
+        add(capital, gridBagConstraints);
         countries.addActionListener(this);
     }
 
