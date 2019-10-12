@@ -1,7 +1,6 @@
 package week10;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,6 +17,7 @@ public class JMovieFrame extends JFrame implements ActionListener {
 
     public JMovieFrame() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(1080, 720);
         setVisible(true);
         setLayout(new BorderLayout());
         add(nb, BorderLayout.NORTH);
